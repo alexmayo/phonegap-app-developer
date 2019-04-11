@@ -57,7 +57,10 @@
         // allow the screen to dim when returning from the served app
             window.plugins.insomnia.allowSleepAgain();
 
-            navigator.splashscreen.hide();
+            setTimeout(function() {
+                navigator.splashscreen.hide();
+            }, 1200);
+         
             $('.footer').removeClass('faded');
 
             // %HOCKEYAPP
